@@ -21,6 +21,7 @@ function initGame(){
 	answer = getRandom( minNumber+1 , maxNumber-1 );
 	guessCounter = 0;
 	updateView();
+	clear();
 }
 
 function updateView(){
@@ -39,16 +40,19 @@ function updateView(){
 }
 
 function guess(){
-	var guessNumber = $("#guessInput").val();
+	var guessNumber = parseInt($("#guessInput").val());
 	if(minNumber < guessNumber && guessNumber < maxNumber){
+		guessCounter ++;
 		if(guessNumber > answer){
 			maxNumber = guessNumber;
 		}else if(guessNumber < answer){
 			minNumber = guessNumber;
 		}else{
-			alert("勝利")
+			$("#guessCounterResult").text(guessCounter);
+			$(".gameDiv").fadeOut(1000,function(){
+				$(".congratulationDiv").fadeIn(1000)
+			});
 		}
-		guessCounter ++;
 		updateView();
 	}
 	clear();
@@ -58,7 +62,18 @@ function clear(){
 	$("#guessInput").val("");
 }
 
-$("#startGameBtn").click(initGame);
+$("#startGameBtn").click(function(){
+	initGame();
+	$(".settingDiv").fadeOut(1000,function(){
+		$(".gameDiv").fadeIn(1000)
+	});
+});
+$("#playAgainBtn").click(function(){
+	initGame();
+	$(".congratulationDiv").fadeOut(1000,function(){
+		$(".gameDiv").fadeIn(1000)
+	});
+});
 $("#clearBtn").click(clear);
 $("#guessBtn").click(guess);
 $("#guessInput").keypress(function(e) {
@@ -66,3 +81,8 @@ $("#guessInput").keypress(function(e) {
         guess();
     }
 });
+$("#changeLevelBtn").click(function(){
+	$(".congratulationDiv").fadeOut(1000,function(){
+		$(".settingDiv").fadeIn(1000)
+	});
+})

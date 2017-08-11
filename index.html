@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container setting">
+    <div class="container settingDiv">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -55,19 +55,20 @@
     <div class="container gameDiv">
         <div class="row">
             <div class="col-md-12 heading">
-                <label for="text" id="minNumberLabel" >下界</label>
-                  ~  
-                <label for="text" id="maxNumberLabel" >上界</label>
+                <label for="text" id="minNumberLabel">下界</label>
+                ~
+                <label for="text" id="maxNumberLabel">上界</label>
             </div>
         </div>
         <div class="col-md-12">
             <span>目前共猜了</span>
-            <label for="text" id="guessCounterLabel" >0</label>
+            <label for="text" id="guessCounterLabel">0</label>
             <span>次</span>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <span>覺得</span><input id="guessInput" type="text"><span>是答案</span>
+                <span>覺得</span>
+                <input id="guessInput" type="text"><span>是答案</span>
             </div>
         </div>
         <div class="row">
@@ -79,7 +80,27 @@
                 <input type="button" id="clearBtn" value="清空" class="btn btn-secondary">
             </div>
             <div class="col-md-2"></div>
-        </div>        
+        </div>
+    </div>
+    <div class="container congratulationDiv">
+        <div class="row">
+            <div class="col-md-12 heading">
+                恭喜猜對囉
+            </div>
+            <div class="col-md-12">
+                總共花了<span id="guessCounterResult"></span>次
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <input type="button" id="playAgainBtn" value="繼續挑戰" class="btn btn-secondary">
+            </div>
+            <div class="col-md-4">
+                <input type="button" id="changeLevelBtn" value="切換難度" class="btn btn-secondary">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
     </div>
     <script src="js/main.js"></script>
 </body>
