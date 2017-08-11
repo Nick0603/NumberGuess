@@ -1,0 +1,29 @@
+.container{
+    text-align: center;
+    width: 70%;
+    margin-top: 4em;
+    padding: 1em;
+    font-size: 3em;
+    color: #666;
+    border: 5px solid #999;
+}
+.heading{
+    font-size: 400%;
+}
+
+img{
+    width: 4em;
+    vertical-align:-90%;
+}
+
+input[type = "radio"]{
+    width: 1em;
+    height: 1em;
+    vertical-align: -20%
+}
+
+
+input[type = "button"]{
+    width: 100%;
+    font-size:1em;
+}

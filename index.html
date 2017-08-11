@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <title>numberGuess</title>
+</head>
+
+<body>
+    <div class="container setting">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <img class="logo" src="./images/logo.PNG" alt="logo">
+                    <span class="heading">猜數字遊戲</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    簡單(easy):
+                    <input type="radio" name="level" value="easy">
+                </p>
+                <img src="./images/easy.PNG" alt="easy">
+            </div>
+            <div class="col-md-4">
+                <p>
+                    普通(normal):
+                    <input type="radio" name="level" value="normal">
+                </p>
+                <img src="./images/normal.PNG" alt="normal">
+            </div>
+            <div class="col-md-4">
+                <p>
+                    困難(hard):
+                    <input type="radio" name="level" value="hard">
+                </p>
+                <img src="./images/hard.PNG" alt="hard">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="button" value="開始遊戲" class="btn btn-secondary">
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
