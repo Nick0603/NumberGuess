@@ -15,13 +15,12 @@ body{
     margin: 0.5em;
 }
 .heading {
-    font-size: 350%;
+    font-size: 3em;
 }
 
 img {
-    width: 100%;
     width: 4em;
-    vertical-align: -70%;
+    vertical-align: -80%;
 }
 
 input[type="radio"] {
@@ -33,4 +32,11 @@ input[type="radio"] {
 input[type="button"] {
     width: 100%;
     font-size: 1em;
+}
+
+input[type="text"] {
+    margin-left:0.5em;
+    margin-right:0.5em;
+    width: 5em;
+    text-align: center;
 }

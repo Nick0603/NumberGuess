@@ -15,11 +15,12 @@
 <body>
     <div class="container setting">
         <div class="row">
-            <div class="col-md-12">
-                <p>
-                    <img class="logo" class="logo" src="./images/logo.PNG" alt="logo">
-                    <span class="heading">猜數字遊戲</span>
-                </p>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <img class="logo" class="logo" src="./images/logo.PNG" alt="logo">
+                <span class="heading">猜數字遊戲</span>
+            </div>
+            <div class="col-md-1">
             </div>
         </div>
         <div class="row">
@@ -47,30 +48,30 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <input type="button" value="開始遊戲" class="btn btn-secondary">
+                <input type="button" id="startGameBtn" value="開始遊戲" class="btn btn-secondary">
             </div>
         </div>
     </div>
     <div class="container gameDiv">
         <div class="row">
             <div class="col-md-12 heading">
-                <label for="text">下界</label>
+                <label for="text" id="minNumber" >下界</label>
                   ~  
-                <label for="text">上界</label>
+                <label for="text" id="maxNumber" >上界</label>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <span>覺得 </span><input type="text"><span> 是答案</span>
+                <span>覺得</span><input id="guessInput" type="text"><span>是答案</span>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4">
-                <input type="button" value="送出" class="btn btn-secondary">
+                <input type="button" id="guessBtn" value="送出" class="btn btn-secondary">
             </div>
             <div class="col-md-4">
-                <input type="button" value="清空" class="btn btn-secondary">
+                <input type="button" id="clearBtn" value="清空" class="btn btn-secondary">
             </div>
             <div class="col-md-2"></div>
         </div>        
